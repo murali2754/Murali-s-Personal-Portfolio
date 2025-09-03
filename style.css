@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+header nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 40px; background: #222; color: #fff;
+}
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; }
+nav a.active { border-bottom: 2px solid #ff5733; }
+section { padding: 50px; }
+.home { text-align: center; }
+.btn {
+  background: #ff5733; color: white; padding: 10px 20px;
+  border-radius: 5px; text-decoration: none;
+}
+.project-card {
+  background: white; padding: 20px; margin: 15px 0;
+  border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.home img {
+  width: 200px;   /* resize */
+  height: auto;   /* keep aspect ratio */
+  border-radius: 50%;  /* circle shape */
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2); /* optional shadow */
+}
+.home {
+  text-align: center;
+  padding: 50px;
+}
+
+.home img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.home-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.home-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.home-nav a:hover {
+  color: #ff5733; /* highlight on hover */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;  /* spacing between name and photo */
+}
+
+.nav-photo {
+  width: 60px;   /* bigger size */
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff; /* optional outline */
+}
+.resume {
+  text-align: center;
+  padding: 50px;
+}
+
+.resume h1 {
+  margin-bottom: 10px;
+}
+
+.resume iframe {
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.resume .btn {
+  background: #ff5733;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.resume .btn:hover {
+  background: #e74c3c;
+}
+.contact {
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info a {
+  color: #ff5733;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(8, 255, 234, 0.399);
+  padding: 20px;
+  border-radius: 27px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: rgb(0, 0, 0);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+.file-label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="file"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+.contact-info p {
+  display: inline-block;
+  background: rgba(8, 255, 234, 0.399);
+  padding: 12px 18px;
+  margin: 10px;
+  border-radius: 27px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-info p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+
+.contact-info a {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #ff0000;   /* optional text highlight on hover */
+}
+.about-card {
+  background: rgba(8, 255, 234, 0.399);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 27px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: rgb(0, 0, 0);
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+.marquee {
+  overflow: hidden;
+  background: #222;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-block;
+  padding-left: 100%; /* start fully offscreen on the right */
+  animation: scroll-left 70s linear infinite; /* adjust speed here */
+}
+
+.marquee-track span {
+  display: inline-block;
+  padding-right: 100px; /* spacing between repeats */
+}
+
+.marquee a {
+  color: #fff;
+  text-decoration: none;
+}
+.marquee a:hover {
+  text-decoration: underline;
+}
+
+/* Keyframes: start at full right (translateX 0) move left 100% width */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
